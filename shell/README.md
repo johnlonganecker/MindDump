@@ -31,6 +31,25 @@ dig - DNS lookup library
 
 >>
 
+### get requests on a port
+
+** useful for see the exact value of a http header request**
+
+```
+netcat -l <port>
+```
+
+### base64 encoding
+
+```
+echo -n "admin:admin" | openssl base64
+```
+
+### base64 decoding
+
+```
+echo -n "YWRtaW46YWRtaW4=" | base64 --decode
+```
 
 
 ** additional content **
@@ -53,3 +72,11 @@ GET / HTTP/1.1
 
 ```
 <output>
+
+### wget
+
+** Download files slower so roommates don't get mad **
+
+```
+wget --limit-rate=200k <file-name>
+```
