@@ -80,3 +80,13 @@ GET / HTTP/1.1
 ```
 wget --limit-rate=200k <file-name>
 ```
+
+### tail
+
+* tail process stdout *
+tail -f /proc/<pid>/fd/1
+
+### strace
+
+* monitor interaction between kernel and process *
+strace -e trace=open -p <pid> -s 80
