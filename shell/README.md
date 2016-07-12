@@ -90,3 +90,59 @@ tail -f /proc/<pid>/fd/1
 
 * monitor interaction between kernel and process *
 strace -e trace=open -p <pid> -s 80
+
+### nmap
+
+* scan these ports *
+nmap -p25000-2000,8080,44
+
+### openssl
+
+* see all information *
+openssl s_client -connect www.google.com:443
+
+use s_client telnet with ssl
+
+openssl x509 -in <file> -noout -text | less
+openssl x509 -in <file> -text
+
+* check to see if tls 1.0 is supported *
+openssl s_client -connect rabbitmq-sb.svc.asv.ice.gecis.io:5671 -ssl3
+
+* check to see if tls 1.0 is supported *
+openssl s_client -connect rabbitmq-sb.svc.asv.ice.gecis.io:5671 -tls1`
+
+* check to see if tls 1.1 is supported *
+openssl s_client -connect rabbitmq-sb.svc.asv.ice.gecis.io:5671 -tls1_1
+
+* check to see if tls 1.2 is supported *
+openssl s_client -connect rabbitmq-sb.svc.asv.ice.gecis.io:5671 -tls1_2
+
+if no certificate is returned then that version is not supported
+
+### Get uri's for apt-get packages
+
+apt-get --print-uris --yes install mongodb-server | grep ^\' | cut -d\' -f2
+
+apt-rdepends mongodb | grep "[^e]Depends: " | awk '{print $2}' | sort | uniq > ok.tx
+
+
+### extracting deb or rpms
+http://www.g-loaded.eu/2008/01/28/how-to-extract-rpm-or-deb-packages/
+
+### get a list of OS libraries
+
+ldconfig -p
+
+### Filter with grep
+
+grep -v DONT_WANT_TO_SEE
+
+### update clock in ubuntu
+sudo ntpdate -s time.nist.gov
+
+### check for open port
+telnet <ip> <port>
+
+### time to run operation
+time sleep 2
