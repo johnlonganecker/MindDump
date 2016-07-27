@@ -150,3 +150,6 @@ time sleep 2
 ### sort ips address
 https://www.madboa.com/geek/sort-addr/
 sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4
+
+### test ha
+ab -n 3000 -c 1 https://<host>
