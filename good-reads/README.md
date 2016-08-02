@@ -26,3 +26,6 @@ https://medium.freecodecamp.com/minimum-viable-devops-919972dfd9e0#.krj0kiniy
 
 ## Git Merge vs Rebase
 https://www.atlassian.com/git/tutorials/merging-vs-rebasing/conceptual-overview
+
+## Explaining HTTP Protocol
+http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
