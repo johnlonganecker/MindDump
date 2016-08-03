@@ -29,3 +29,6 @@ https://www.atlassian.com/git/tutorials/merging-vs-rebasing/conceptual-overview
 
 ## Explaining HTTP Protocol
 http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+
+## How to use netcat
+https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps
