@@ -153,3 +153,33 @@ sort -n -t . -k 1,1 -k 2,2 -k 3,3 -k 4,4
 
 ### test ha
 ab -n 3000 -c 1 https://<host>
+
+### Stress Test rabbitmq
+./runjava.sh com.rabbitmq.examples.PerfTest -h amqps://<user>:<password>@<host>:<port>/<vhost> -x 1 -y 1 -s 1000 -C 10 -u <queue-name>`
+
+### exclude from git diff
+http://stackoverflow.com/questions/4380945/exclude-a-directory-from-git-diff
+git diff previous_release current_release --name-only | grep -v '^spec/' | xargs git diff previous_release current_release --
+
+### set command
+var="one two three"
+set -- $var
+echo "\$1=" $1
+echo "\$2=" $2
+echo "\$3=" $3
+echo "\$0=" $0
+echo "\$@=" $@
+
+$1= one
+$2= two
+$3= three
+$0= /path/to/file.sh
+$@= one two three
+
+bosh -d <mainfest-file.yml> ssh
+
+### Replace space with new line
+$ ls | tr ' ' '\n'
+file1
+file2
+file3
