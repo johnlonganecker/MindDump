@@ -32,3 +32,6 @@ http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-kn
 
 ## How to use netcat
 https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps
+
+## What can you do with One Pixel Images
+http://cloudinary.com/blog/one_pixel_is_worth_three_thousand_words
