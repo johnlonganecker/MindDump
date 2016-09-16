@@ -35,3 +35,10 @@ https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-
 
 ## What can you do with One Pixel Images
 http://cloudinary.com/blog/one_pixel_is_worth_three_thousand_words
+
+## TCP Puzzler
+https://www.joyent.com/blog/tcp-puzzlers
+
+# Backpacking/Camping
+## Food handling and storages
+https://www.rei.com/learn/expert-advice/food-handling-storage.html?cm_mmc=email_com_lm-_-EducateAndEngage-_-091616-_-tle_bear&ev36=24432903&RMID=20160916_Educate_and_Engage&RRID=57047822&ev11=1
