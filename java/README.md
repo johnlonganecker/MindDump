@@ -6,3 +6,6 @@ mvn archetype:generate -DgroupId=com.johnlonganecker -DartifactId=performance -D
 
 ### Maven Repository Info
 http://mvnrepository.com
+
+### Useful Java JSON Class Creator Tool
+http://www.jsonschema2pojo.org/
