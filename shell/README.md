@@ -183,3 +183,14 @@ $ ls | tr ' ' '\n'
 file1
 file2
 file3
+
+### create SSL cert and private key
+ssh-keygen -f private.key
+openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout private.key -out cert.crt
+
+### Daemonize Program
+http://blog.terminal.com/using-daemon-to-daemonize-your-programs/
+
+### Create user on debian
+adduser jlonganecker
+usermod -aG sudo jlonganecker
