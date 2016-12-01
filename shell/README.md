@@ -192,5 +192,22 @@ openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout private.key -out ce
 http://blog.terminal.com/using-daemon-to-daemonize-your-programs/
 
 ### Create user on debian
-adduser jlonganecker
-usermod -aG sudo jlonganecker
+adduser newuser
+usermod -aG sudo newuser
+
+### TCPDump Resource
+https://danielmiessler.com/study/tcpdump/#gs.vJM77is
+
+tcpdump -i eth0 host 1.2.3.4 and port 1337
+
+### Make Bootable USB from ISO on MacOS
+diskutil list #find usb storage device copy its device path IE /dev/disk3
+diskutil unmountDisk <device path>
+sudo dd if=~/path/to/iso.iso of=<device path> bs=1m
+diskutil eject <device path>
+
+### Parameter Expansion
+http://wiki.bash-hackers.org/syntax/pe
+
+### sed
+http://www.grymoire.com/Unix/Sed.html#uh-0
