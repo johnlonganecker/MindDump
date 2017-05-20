@@ -216,3 +216,11 @@ http://wiki.bash-hackers.org/syntax/pe
 
 ### sed
 http://www.grymoire.com/Unix/Sed.html#uh-0
+
+### ssh locks
+~. - terminate session
+~B - send a BREAK to the remote system
+~R - request rekey (SSH protocol 2 only)
+~# - list forwarded connections
+~? - this message
+~~ - send the escape character
