@@ -97,6 +97,8 @@ strace -e trace=open -p <pid> -s 80
 nmap -p25000-2000,8080,44
 
 ### openssl
+https://jamielinux.com/docs/openssl-certificate-authority/create-the-root-pair.html
+https://www.feistyduck.com/library/openssl-cookbook/online/ch-openssl.html#
 
 * see all information *
 openssl s_client -connect www.google.com:443
@@ -117,6 +119,9 @@ openssl s_client -connect rabbitmq-sb.svc.asv.ice.gecis.io:5671 -tls1_1
 
 * check to see if tls 1.2 is supported *
 openssl s_client -connect rabbitmq-sb.svc.asv.ice.gecis.io:5671 -tls1_2
+
+* renewing certificate
+openssl x509 -x509toreq -in fd.crt -out fd.csr -signkey fd.key
 
 if no certificate is returned then that version is not supported
 
