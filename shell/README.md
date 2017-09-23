@@ -108,6 +108,9 @@ use s_client telnet with ssl
 openssl x509 -in <file> -noout -text | less
 openssl x509 -in <file> -text
 
+* read DER format
+openssl x509 -in cert.crt -inform DER -text
+
 * check to see if tls 1.0 is supported *
 openssl s_client -connect rabbitmq-sb.svc.asv.ice.gecis.io:5671 -ssl3
 
