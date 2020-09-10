@@ -196,6 +196,12 @@ file3
 ssh-keygen -f private.key
 openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout private.key -out cert.crt
 
+### create pub key from private key
+openssl rsa -in key.pem -pubout > pubkey.pub
+
+### reverse ssh pub key from private key
+openssl rsa -y -f key.pem > pubkey.pem
+
 ### Daemonize Program
 http://blog.terminal.com/using-daemon-to-daemonize-your-programs/
 
